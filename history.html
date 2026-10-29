@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Perusahaan - PT Arunika Teknologi Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        defaults: {
+                            blue: '#b45309',
+                            navy: '#451a03',
+                            yellow: '#fbbf24',
+                            mist: '#fffbeb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    
+    <div class="bg-defaults-yellow text-defaults-navy text-[10px] sm:text-xs py-2 px-4 lg:px-80 flex flex-col sm:flex-row justify-between items-center hidden lg:flex">
+        <div class="flex space-x-6 uppercase font-semibold">
+            <a href="index.html" class="hover:text-defaults-yellow">Beranda</a>
+            <a href="#" class="hover:text-defaults-yellow">Tentang Kami</a>
+            <a href="#" class="hover:text-defaults-yellow">Layanan</a>
+            <a href="#" class="hover:text-defaults-yellow">Portofolio</a>
+            <a href="#" class="hover:text-defaults-yellow">Karier</a>
+            <a href="#" class="hover:text-defaults-yellow">Media & Berita</a>
+            <a href="#" class="hover:text-defaults-yellow">Kontak</a>
+        </div>
+        <div class="flex space-x-3 mt-2 sm:mt-0">
+            <a href="#"><i class="fas fa-question-circle"></i></a>
+            <a href="#"><i class="fas fa-language"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+
+    
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm relative">
+        <div class="px-4 lg:px-80 py-4 flex justify-between items-center">
+            
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/155e9a/FFFFFF?text=A" alt="Logo Arunika Teknologi Nusantara" class="h-10 w-10 rounded-full">
+                <div class="leading-tight">
+                    <h1 class="text-defaults-blue font-bold text-sm lg:text-base">ARUNIKA</h1>
+                    <p class="text-xs text-gray-600 tracking-wider">TEKNOLOGI NUSANTARA</p>
+                </div>
+            </div>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-toggle" type="button" class="text-gray-600 focus:outline-none" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="mobile-menu-icon" class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+            
+            <div class="hidden lg:flex gap-x-6 items-center text-sm font-medium text-gray-700">
+                <div class="group relative cursor-pointer py-4 order-2"><a href="index.html#services" class="hover:text-defaults-blue">Layanan</a></div>
+                <div class="group relative cursor-pointer py-4 order-3"><a href="index.html#portfolio" class="hover:text-defaults-blue">Portofolio</a></div>
+                <div class="group relative cursor-pointer py-4 order-4"><a href="posts.html" class="hover:text-defaults-blue">Berita</a></div>
+                <div class="group relative cursor-pointer py-4 order-5"><a href="mailto:info@arunikatech.id?subject=Karier" class="hover:text-defaults-blue">Karier</a></div>
+
+                <div class="group relative cursor-pointer py-4 order-1">
+                    <span class="text-defaults-blue bg-defaults-mist px-3 py-1 rounded-md">
+                        Tentang Kami
+                        <i class="fas fa-chevron-down text-[10px]"></i>
+                    </span>
+                    
+                    <div class="absolute left-1/2 -translate-x-1/2 top-full w-[900px] pt-8 hidden group-hover:block z-50">
+                        <div class="bg-white shadow-xl rounded-xl border border-gray-100 p-6 flex gap-8 mt-0">
+                            
+                            <div class="bg-defaults-yellow rounded-xl p-6 w-1/3 text-defaults-navy">
+                                <div class="bg-white/20 w-10 h-10 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+
+                                <h3 class="text-xl font-bold mb-2">
+                                    Tentang Arunika
+                                </h3>
+
+                                <p class="text-sm text-amber-950">
+                                    Kenali perusahaan, tim, dan cara kami bekerja.
+                                </p>
+                            </div>
+
+                            
+                            <div class="w-2/3 flex gap-16 p-4">
+
+                                <div>
+                                    <h4 class="text-xs font-bold text-defaults-blue mb-4 uppercase tracking-wider">
+                                        PROFIL PERUSAHAAN
+                                    </h4>
+                                    <ul class="space-y-4 text-sm text-gray-600">
+                                        <li>
+                                            <a href="history.html" class="hover:text-defaults-blue">
+                                                Sejarah & Nilai
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="leadership.html" class="hover:text-defaults-blue">
+                                                Tim & Kepemimpinan
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="organization-structures.html" class="hover:text-defaults-blue">
+                                                Struktur Organisasi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="posts.html" class="hover:text-defaults-blue">
+                                                Berita & Insight
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:info@arunikatech.id" class="hover:text-defaults-blue">
+                                                Hubungi Kami
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-xs font-bold text-defaults-blue mb-4 uppercase tracking-wider">
+                                        LAYANAN DIGITAL
+                                    </h4>
+
+                                    <ul class="space-y-4 text-sm text-gray-600">
+                                        <li>
+                                            <a href="index.html#services" class="hover:text-defaults-blue">
+                                                Pengembangan Website
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#services" class="hover:text-defaults-blue">
+                                                Aplikasi Mobile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#services" class="hover:text-defaults-blue">
+                                                Sistem Informasi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer py-4 order-6"><a href="mailto:info@arunikatech.id" class="hover:text-defaults-blue">Kontak</a></div>
+            </div>
+
+            
+            <div class="hidden lg:block">
+                <button class="border border-defaults-blue text-defaults-blue px-4 py-2 rounded-full text-sm font-medium hover:bg-defaults-yellow hover:text-defaults-navy transition">
+                    <i class="fas fa-search mr-2"></i> Cari
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <button id="mobile-menu-backdrop" type="button" class="fixed inset-0 z-[60] bg-gray-900/50 opacity-0 invisible pointer-events-none transition-opacity duration-300 lg:hidden" aria-label="Tutup menu navigasi" aria-hidden="true" inert></button>
+    <aside id="mobile-menu" class="fixed inset-y-0 left-0 z-[70] w-[min(20rem,85vw)] -translate-x-full overflow-y-auto bg-white shadow-2xl transition-transform duration-300 ease-in-out lg:hidden" aria-label="Navigasi utama" aria-hidden="true" inert>
+        <div class="border-b border-gray-100 bg-defaults-yellow px-6 py-6 text-defaults-navy">
+            <p class="text-xs font-semibold uppercase">ARUNIKA</p>
+            <p class="mt-1 text-sm text-amber-950">TEKNOLOGI NUSANTARA</p>
+        </div>
+        <nav class="px-6 py-5" aria-label="Menu mobile">
+            <ul class="space-y-1 text-sm font-medium text-gray-700">
+                <li><a href="index.html#services" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Layanan</a></li>
+                <li><a href="index.html#portfolio" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Portofolio</a></li>
+                <li><a href="posts.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Berita</a></li>
+                <li><a href="mailto:info@arunikatech.id?subject=Karier" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Karier</a></li>
+            </ul>
+            <div class="my-5 border-t border-gray-200"></div>
+            <h2 class="px-3 text-xs font-bold uppercase text-defaults-blue">Tentang Kami</h2>
+            <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                <li><a href="history.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Sejarah & Nilai</a></li>
+                <li><a href="leadership.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Tim & Kepemimpinan</a></li>
+                <li><a href="organization-structures.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Struktur Organisasi</a></li>
+                <li><a href="mailto:info@arunikatech.id" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <section class="relative bg-defaults-yellow text-defaults-navy py-16 lg:py-20 px-4 lg:px-80 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="images/bg3.png" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-4xl">
+            <p class="text-defaults-yellow font-semibold text-sm tracking-widest uppercase mb-3">PROFIL PERUSAHAAN</p>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Sejarah & Nilai</h1>
+            <p class="text-sm md:text-base text-amber-950 max-w-2xl">Mengenal perjalanan PT Arunika Teknologi Nusantara dalam menghadirkan solusi digital dari Tembilahan untuk Indonesia.</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 lg:px-16 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+            <div class="w-full lg:w-7/12">
+                <div class="inline-flex items-center bg-amber-100/50 border border-amber-200 text-defaults-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                    <i class="fas fa-history mr-2"></i> Perjalanan Kami
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">Berawal dari Tembilahan, <span class="text-defaults-blue">Bertumbuh Bersama Teknologi</span></h2>
+                <div class="text-gray-600 mb-10 space-y-4 leading-relaxed">
+                    <p>PT Arunika Teknologi Nusantara berdiri pada 4 Maret 2003 dan berpusat di Tembilahan, Riau. Sejak awal, perusahaan hadir dengan semangat untuk membantu organisasi memanfaatkan teknologi secara lebih baik.</p>
+                    <p>Kini Arunika menyediakan layanan pengembangan website dan aplikasi, sistem informasi, serta transformasi digital. Setiap solusi dirancang untuk menjawab kebutuhan klien dengan pendekatan yang profesional, terintegrasi, dan berorientasi pada hasil.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-defaults-mist w-10 h-10 rounded-lg flex items-center justify-center text-defaults-blue mb-4"><i class="fas fa-lightbulb"></i></div>
+                        <h4 class="font-bold text-gray-900 text-sm mb-2">Inovasi yang Relevan</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Menghadirkan teknologi yang sesuai dengan kebutuhan dan tujuan setiap organisasi.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-defaults-mist w-10 h-10 rounded-lg flex items-center justify-center text-defaults-blue mb-4"><i class="fas fa-handshake"></i></div>
+                        <h4 class="font-bold text-gray-900 text-sm mb-2">Kemitraan Tepercaya</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Bekerja berdampingan dengan klien dari perencanaan hingga solusi digunakan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-5/12 relative mt-10 lg:mt-0">
+                <div class="bg-white p-4 pb-24 md:pb-4 rounded-[2rem] shadow-xl relative z-10 mx-auto max-w-md lg:max-w-none">
+                    <img src="images/img.png" alt="Kantor dan lingkungan kerja Arunika" class="w-full h-auto rounded-2xl object-cover">
+                    <div class="absolute bottom-6 left-6 right-6 md:w-3/4 md:left-1/2 md:-translate-x-1/2 bg-white p-4 rounded-xl flex items-center gap-4 shadow-lg border border-gray-100">
+                        <div class="bg-defaults-yellow text-defaults-navy w-10 h-10 flex-shrink-0 rounded-lg flex items-center justify-center"><i class="fas fa-calendar-alt"></i></div>
+                        <div><h4 class="font-bold text-defaults-blue text-sm">Berdiri Sejak</h4><p class="text-xs text-gray-500 mt-0.5">4 Maret 2003 Â· Tembilahan, Riau</p></div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-defaults-mist rounded-[2rem] transform translate-x-6 translate-y-6 -z-0 max-w-md mx-auto lg:max-w-none lg:mx-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 lg:px-16 bg-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16"><p class="text-sm font-bold text-defaults-blue tracking-widest uppercase mb-2">PERJALANAN</p><h2 class="text-3xl md:text-4xl font-bold text-gray-900">Tumbuh Mengikuti Kebutuhan</h2><p class="text-gray-600 mt-4 max-w-2xl mx-auto">Dari awal berdiri hingga kini, fokus kami adalah membantu klien menghadapi tantangan dengan teknologi.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-defaults-yellow text-defaults-navy p-7 rounded-2xl"><span class="text-defaults-yellow text-sm font-bold">2003</span><h3 class="font-bold text-lg mt-3 mb-2">Awal Perjalanan</h3><p class="text-sm text-amber-950 leading-relaxed">PT Arunika Teknologi Nusantara berdiri di Tembilahan, Riau.</p></div>
+                <div class="bg-white p-7 rounded-2xl border border-gray-200"><span class="text-defaults-blue text-sm font-bold">Bertumbuh</span><h3 class="font-bold text-lg mt-3 mb-2 text-gray-900">Memperluas Keahlian</h3><p class="text-sm text-gray-600 leading-relaxed">Kapabilitas dikembangkan untuk menjawab kebutuhan teknologi yang terus berubah.</p></div>
+                <div class="bg-white p-7 rounded-2xl border border-gray-200"><span class="text-defaults-blue text-sm font-bold">Terintegrasi</span><h3 class="font-bold text-lg mt-3 mb-2 text-gray-900">Menghubungkan Solusi</h3><p class="text-sm text-gray-600 leading-relaxed">Website, aplikasi, dan sistem informasi dirangkai untuk mendukung proses bisnis.</p></div>
+                <div class="bg-white p-7 rounded-2xl border border-gray-200"><span class="text-defaults-blue text-sm font-bold">Hari Ini</span><h3 class="font-bold text-lg mt-3 mb-2 text-gray-900">Mendukung Transformasi</h3><p class="text-sm text-gray-600 leading-relaxed">Kami bermitra dengan bisnis dan organisasi dalam perjalanan digital mereka.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 lg:px-16 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 max-w-2xl mx-auto"><p class="text-sm font-bold text-defaults-blue tracking-widest uppercase mb-2">NILAI-NILAI</p><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Prinsip dalam Setiap Kolaborasi</h2><p class="text-gray-600">Nilai ini menjadi dasar kami saat merancang solusi dan bekerja bersama klien.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300"><div class="bg-defaults-yellow text-defaults-navy w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fas fa-shield-alt"></i></div><h3 class="text-xl font-bold text-gray-900 mb-3">Integritas</h3><p class="text-gray-500 text-sm leading-relaxed">Menjaga kepercayaan melalui tanggung jawab dan komunikasi yang terbuka.</p></div>
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300"><div class="bg-defaults-yellow text-defaults-navy w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fas fa-lightbulb"></i></div><h3 class="text-xl font-bold text-gray-900 mb-3">Inovasi</h3><p class="text-gray-500 text-sm leading-relaxed">Terus mencari pendekatan yang lebih efektif untuk menyelesaikan masalah.</p></div>
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300"><div class="bg-defaults-yellow text-defaults-navy w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fas fa-users"></i></div><h3 class="text-xl font-bold text-gray-900 mb-3">Kolaborasi</h3><p class="text-gray-500 text-sm leading-relaxed">Mendengarkan kebutuhan klien dan membangun solusi sebagai mitra.</p></div>
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition duration-300"><div class="bg-defaults-yellow text-defaults-navy w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fas fa-chart-line"></i></div><h3 class="text-xl font-bold text-gray-900 mb-3">Dampak</h3><p class="text-gray-500 text-sm leading-relaxed">Mengutamakan teknologi yang memberi manfaat nyata bagi operasional bisnis.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-24 py-16 px-4 lg:px-16 bg-defaults-yellow text-defaults-navy relative overflow-hidden text-center">
+        <div id="particles-container" class="absolute inset-0 pointer-events-none"></div>
+        <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center"><i class="fas fa-quote-left text-4xl text-defaults-yellow mb-8 opacity-80"></i><h2 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-8">Teknologi yang tepat membantu bisnis bergerak lebih jauh.</h2><p class="text-amber-950 font-medium">PT Arunika Teknologi Nusantara</p></div>
+    </section>
+
+    <footer class="bg-[#111111] text-gray-300 pt-16 pb-6 px-4 lg:px-80">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+            <!-- Company -->
+            <div>
+                <div class="flex items-center justify-center lg:justify-start space-x-3 mb-6">
+                    <img src="https://placehold.co/40x40/155e9a/FFFFFF?text=A"
+                        alt="Logo Arunika Tech"
+                        class="h-12 w-12 rounded-xl">
+
+                    <div class="leading-tight">
+                        <h1 class="text-white font-bold text-sm">ARUNIKA TECH</h1>
+                        <p class="text-xs text-gray-400 tracking-wider">
+                            TEKNOLOGI NUSANTARA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-2 text-sm text-center lg:text-left">
+                    <p>
+                        PT Arunika Teknologi Nusantara<br>
+                        Tembilahan, Riau, Indonesia
+                    </p>
+                    <p>Telepon: +62 811-XXXX-XXXX</p>
+                    <p>Email: info@arunikatech.id</p>
+                </div>
+            </div>
+
+
+            <!-- Tautan Cepat -->
+            <div class="hidden lg:block">
+                <h4 class="text-white font-bold mb-6">
+                    Tautan Cepat
+                </h4>
+
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Tentang Kami
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Layanan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Produk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Karier
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Berita
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Layanan -->
+            <div class="hidden lg:block">
+                <h4 class="text-white font-bold mb-6">
+                    Layanan
+                </h4>
+
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Solusi Digital
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Pengembangan Aplikasi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Konsultasi Teknologi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Cloud & Infrastruktur
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition">
+                            Dukungan Teknis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-white font-bold mb-6 text-center lg:text-left">
+                    Ikuti Kami
+                </h4>
+
+                <div class="flex gap-3 justify-center lg:justify-start">
+
+                    <a href="#"
+                    class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-defaults-yellow text-defaults-navy transition">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+
+                    <a href="#"
+                    class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-defaults-yellow text-defaults-navy transition">
+                        <i class="fab fa-youtube text-sm"></i>
+                    </a>
+
+                    <a href="#"
+                    class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-defaults-yellow text-defaults-navy transition">
+                        <i class="fab fa-linkedin-in text-sm"></i>
+                    </a>
+
+                    <a href="#"
+                    class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-defaults-yellow text-defaults-navy transition">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+
+                    <a href="#"
+                    class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-defaults-yellow text-defaults-navy transition">
+                        <i class="fab fa-tiktok text-sm"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+
+            <p>
+                Copyright 2026 - PT Arunika Teknologi Nusantara
+            </p>
+
+            <div class="flex space-x-4 mt-4 md:mt-0 hidden lg:block">
+                <a href="#" class="hover:text-white transition">
+                    FAQ
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Kebijakan Privasi
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Syarat & Ketentuan
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Peta Situs
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
