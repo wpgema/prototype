@@ -34,13 +34,25 @@
     animation: aboutGradientShift 18s ease-in-out infinite;
 }
 
+.about-hero-gradient {
+    background: linear-gradient(110deg, rgba(245, 158, 11, 0.85), rgba(251, 191, 36, 0.7), rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.85));
+    background-size: 250% 100%;
+    animation: aboutHeroGradientShift 16s ease-in-out infinite;
+}
+
 @keyframes aboutGradientShift {
     0%, 100% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
 }
 
+@keyframes aboutHeroGradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .about-gradient-section {
+    .about-gradient-section,
+    .about-hero-gradient {
         animation: none;
     }
 }
