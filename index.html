@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - PT Arunika Teknologi Nusantara</title>
+    <title>Beranda - Yayasan Tunas Mandiri Bhakti Yudha</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -32,13 +32,12 @@
 
     <div class="bg-defaults-yellow text-defaults-navy text-[10px] sm:text-xs py-2 px-4 lg:px-80 flex flex-col sm:flex-row justify-between items-center hidden lg:flex">
         <div class="flex space-x-6 uppercase font-semibold">
-            <a href="#" class="hover:text-defaults-yellow">Tentang Kami</a>
-            <a href="#" class="hover:text-defaults-yellow">Layanan</a>
-            <a href="#" class="hover:text-defaults-yellow">Portofolio</a>
-            <a href="#" class="hover:text-defaults-yellow">Karier</a>
-            <a href="#" class="hover:text-defaults-yellow">Media & Berita</a>
-            <a href="#" class="hover:text-defaults-yellow">Mitra</a>
-            <a href="#" class="hover:text-defaults-yellow">Kontak</a>
+            <a href="#about" class="hover:text-amber-700">Profil Yayasan</a>
+            <a href="#services" class="hover:text-amber-700">Unit Pendidikan</a>
+            <a href="#services" class="hover:text-amber-700">Program Unggulan</a>
+            <a href="#services" class="hover:text-amber-700">Fasilitas</a>
+            <a href="#news" class="hover:text-amber-700">Berita & Kegiatan</a>
+            <a href="#contact" class="hover:text-amber-700">Kontak</a>
         </div>
         <div class="flex space-x-3 mt-2 sm:mt-0">
             <a href="#"><i class="fas fa-question-circle"></i></a>
@@ -51,10 +50,10 @@
         <div class="px-4 lg:px-80 py-4 flex justify-between items-center">
             
             <div class="flex items-center space-x-2">
-                <img src="https://placehold.co/40x40/155e9a/FFFFFF?text=Logo" alt="Logo PT Arunika Teknologi Nusantara" class="h-10 w-10 rounded-full">
+                <img src="images/logo.png" alt="Logo Yayasan Tunas Mandiri Bhakti Yudha" class="h-10 w-10 rounded-full">
                 <div class="leading-tight">
-                    <h1 class="text-defaults-blue font-bold text-sm lg:text-base">ARUNIKA</h1>
-                    <p class="text-xs text-gray-600 tracking-wider">TEKNOLOGI NUSANTARA</p>
+                    <h1 class="text-defaults-blue font-bold text-sm lg:text-base">Yayasan Tunas Mandiri</h1>
+                    <p class="text-xs text-gray-600 tracking-wider">Bhakti Yudha</p>
                 </div>
             </div>
             
@@ -65,19 +64,13 @@
             </div>
             
             <div class="hidden lg:flex gap-x-6 items-center text-sm font-medium text-gray-700">
-                <div class="group relative cursor-pointer py-4 order-2"><a href="index.html#services" class="hover:text-defaults-blue">Tentang Kami</a></div>
-                <div class="group relative cursor-pointer py-4 order-2"><a href="index.html#services" class="hover:text-defaults-blue">Layanan</a></div>
-                <div class="group relative cursor-pointer py-4 order-3"><a href="index.html#portfolio" class="hover:text-defaults-blue">Portofolio</a></div>
-                <div class="group relative cursor-pointer py-4 order-4"><a href="posts.html" class="hover:text-defaults-blue">Berita</a></div>
-                <div class="group relative cursor-pointer py-4 order-5"><a href="mailto:info@arunikatech.id?subject=Karier" class="hover:text-defaults-blue">Karier</a></div>
-                <div class="group relative cursor-pointer py-4 order-6"><a href="mailto:info@arunikatech.id" class="hover:text-defaults-blue">Kontak</a></div>
-            </div>
-
-            
-            <div class="hidden lg:block">
-                <button class="border border-defaults-blue text-defaults-blue px-4 py-2 rounded-full text-sm font-medium hover:bg-defaults-yellow hover:text-defaults-navy transition">
-                    <i class="fas fa-search mr-2"></i> Cari
-                </button>
+                <div class="group relative cursor-pointer py-4 order-1"><a href="#home" class="hover:text-defaults-blue">Beranda</a></div>
+                <div class="group relative cursor-pointer py-4 order-2"><a href="#about" class="hover:text-defaults-blue">Profil Yayasan</a></div>
+                <div class="group relative cursor-pointer py-4 order-3"><a href="#services" class="hover:text-defaults-blue">Unit Pendidikan</a></div>
+                <div class="group relative cursor-pointer py-4 order-4"><a href="#services" class="hover:text-defaults-blue">Program Unggulan</a></div>
+                <div class="group relative cursor-pointer py-4 order-5"><a href="#services" class="hover:text-defaults-blue">Fasilitas</a></div>
+                <div class="group relative cursor-pointer py-4 order-6"><a href="#news" class="hover:text-defaults-blue">Berita & Kegiatan</a></div>
+                <div class="group relative cursor-pointer py-4 order-7"><a href="#contact" class="hover:text-defaults-blue">Kontak</a></div>
             </div>
         </div>
     </nav>
@@ -85,58 +78,47 @@
     <button id="mobile-menu-backdrop" type="button" class="fixed inset-0 z-[60] bg-gray-900/50 opacity-0 invisible pointer-events-none transition-opacity duration-300 lg:hidden" aria-label="Tutup menu navigasi" aria-hidden="true" inert></button>
     <aside id="mobile-menu" class="fixed inset-y-0 left-0 z-[70] w-[min(20rem,85vw)] -translate-x-full overflow-y-auto bg-white shadow-2xl transition-transform duration-300 ease-in-out lg:hidden" aria-label="Navigasi utama" aria-hidden="true" inert>
         <div class="border-b border-gray-100 bg-defaults-yellow px-6 py-6 text-defaults-navy">
-            <p class="text-xs font-semibold uppercase">ARUNIKA</p>
-            <p class="mt-1 text-sm text-amber-950">TEKNOLOGI NUSANTARA</p>
+            <p class="text-xs font-semibold uppercase">Yayasan Tunas Mandiri</p>
+            <p class="mt-1 text-sm text-amber-950">Bhakti Yudha</p>
         </div>
         <nav class="px-6 py-5" aria-label="Menu mobile">
             <ul class="space-y-1 text-sm font-medium text-gray-700">
-                <li><a href="index.html#services" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Layanan</a></li>
-                <li><a href="index.html#portfolio" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Portofolio</a></li>
-                <li><a href="posts.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Berita</a></li>
-                <li><a href="mailto:info@arunikatech.id?subject=Karier" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Karier</a></li>
-            </ul>
-            <div class="my-5 border-t border-gray-200"></div>
-            <h2 class="px-3 text-xs font-bold uppercase text-defaults-blue">Tentang Kami</h2>
-            <ul class="mt-2 space-y-1 text-sm text-gray-600">
-                <li><a href="history.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Sejarah & Nilai</a></li>
-                <li><a href="leadership.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Tim & Kepemimpinan</a></li>
-                <li><a href="organization-structures.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Struktur Organisasi</a></li>
-                <li><a href="mailto:info@arunikatech.id" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Hubungi Kami</a></li>
+                <li><a href="#home" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Beranda</a></li>
+                <li><a href="#about" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Profil Yayasan</a></li>
+                <li><a href="#services" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Unit & Program Pendidikan</a></li>
+                <li><a href="#news" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Berita & Kegiatan</a></li>
+                <li><a href="#contact" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Kontak</a></li>
             </ul>
         </nav>
     </aside>
-
     
-    <section class="relative h-[80vh] lg:min-h-[800px] flex items-center overflow-hidden">
+    <section id="home" class="relative h-[80vh] lg:min-h-[800px] flex items-center overflow-hidden">
         
         <div class="absolute inset-0 z-0">
             <img id="hero-image" src="images/students3.jpg" class="hero-image-zoom absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out" alt="Hero Background">
             <img id="hero-image-next" src="images/students3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 ease-in-out" alt="">
-            <div class="absolute inset-0 bg-defaults-yellow/80 mix-blend-multiply"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-defaults-navy/90 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#facc15]/75 via-[#fbbf24]/60 to-[#f59e0b]/50"></div>
         </div>
         
         <div class="relative z-10 px-4 lg:px-80 w-full flex justify-between items-center">
-            
-            <div class="max-w-2xl text-white">
-                <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs mb-6 border border-white/30">
+            <div class="max-w-2xl text-defaults-navy">
+                <div class="inline-flex items-center bg-white/40 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs mb-6 border border-amber-900/20">
                     <span class="w-2 h-2 rounded-full bg-defaults-yellow mr-2"></span>
-                    Arunika Teknologi Nusantara
+                    Yayasan Tunas Mandiri
                 </div>
                 <div class="hero-text">
-                    <h1 id="hero-title" class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight transition-all duration-700 ease-in-out">Membangun Solusi Digital untuk Indonesia</h1>
-                    <p id="hero-tagline" class="text-sm md:text-base text-gray-200 mb-8 transition-all duration-700 ease-in-out">Terletak di Tembilahan, Riau, Arunika Teknologi Nusantara menjadi pusat layanan teknologi utama di Indonesia.</p>
+                    <h1 id="hero-title" class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight transition-all duration-700 ease-in-out">Membangun Generasi Masa Depan</h1>
+                    <p id="hero-tagline" class="text-sm md:text-base text-amber-950 mb-8 transition-all duration-700 ease-in-out">Yayasan kami berkomitmen menghadirkan pendidikan berkualitas untuk membentuk generasi yang cerdas, berkarakter, berakhlak mulia, dan siap menghadapi tantangan masa depan.</p>
                 </div>
                 <div class="flex flex-wrap gap-4">
-                    <button class="bg-defaults-yellow text-amber-950 font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition flex items-center text-sm md:text-base">
-                        Lihat Produk <i class="fas fa-arrow-right ml-2"></i>
+                    <button class="bg-defaults-navy text-white font-semibold px-6 py-3 rounded-full hover:bg-amber-950 transition flex items-center text-sm md:text-base">
+                        Jelajahi Program <i class="fas fa-arrow-right ml-2"></i>
                     </button>
-                    <button class="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition text-sm md:text-base">
+                    <button class="bg-transparent border border-defaults-navy/60 text-defaults-navy font-semibold px-6 py-3 rounded-full hover:bg-black/10 transition text-sm md:text-base">
                         Tentang Perusahaan
                     </button>
                 </div>
             </div>
-
             
             <div class="hidden lg:block relative mr-8">
                 <div class="bg-white/20 backdrop-blur-md p-2 rounded-2xl border border-white/30 w-72">
@@ -152,7 +134,6 @@
             </div>
         </div>
     </section>
-
     
     <section class="bg-defaults-yellow text-defaults-navy py-6 lg:py-8 px-3 lg:px-80 border-t border-white/20 relative z-20">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 lg:gap-6 text-left lg:divide-x lg:divide-white/20">
@@ -161,8 +142,8 @@
                     <i class="fas fa-project-diagram text-base lg:text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="text-lg lg:text-2xl font-bold">150+</h3>
-                    <p class="text-[10px] lg:text-xs text-amber-950">Proyek Selesai</p>
+                    <h3 class="text-lg lg:text-2xl font-bold">01</h3>
+                    <p class="text-[10px] lg:text-xs text-amber-950">Pendidikan Berkarakter</p>
                 </div>
             </div>
 
@@ -171,8 +152,8 @@
                     <i class="fas fa-handshake text-base lg:text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="text-lg lg:text-2xl font-bold">80+</h3>
-                    <p class="text-[10px] lg:text-xs text-amber-950">Klien & Mitra</p>
+                    <h3 class="text-lg lg:text-2xl font-bold">02</h3>
+                    <p class="text-[10px] lg:text-xs text-amber-950">Belajar Aktif</p>
                 </div>
             </div>
 
@@ -181,8 +162,8 @@
                     <i class="fas fa-users text-base lg:text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="text-lg lg:text-2xl font-bold">25+</h3>
-                    <p class="text-[10px] lg:text-xs text-amber-950">Profesional</p>
+                    <h3 class="text-lg lg:text-2xl font-bold">03</h3>
+                    <p class="text-[10px] lg:text-xs text-amber-950">Potensi & Kreativitas</p>
                 </div>
             </div>
 
@@ -191,8 +172,8 @@
                     <i class="fas fa-calendar-check text-base lg:text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="text-lg lg:text-2xl font-bold">10+</h3>
-                    <p class="text-[10px] lg:text-xs text-amber-950">Tahun Pengalaman</p>
+                    <h3 class="text-lg lg:text-2xl font-bold">04</h3>
+                    <p class="text-[10px] lg:text-xs text-amber-950">Kolaborasi</p>
                 </div>
             </div>
 
@@ -201,15 +182,15 @@
                     <i class="fas fa-star text-base lg:text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="text-lg lg:text-2xl font-bold">98%</h3>
-                    <p class="text-[10px] lg:text-xs text-amber-950">Kepuasan Klien</p>
+                    <h3 class="text-lg lg:text-2xl font-bold">05</h3>
+                    <p class="text-[10px] lg:text-xs text-amber-950">Masa Depan Gemilang</p>
                 </div>
             </div>
 
         </div>
     </section>
     
-    <section class="py-20 px-4 lg:px-80 bg-gray-50">
+    <section id="about" class="py-20 px-4 lg:px-80 bg-gray-50">
         <div class="flex flex-col lg:flex-row gap-16 items-center">
             
             <div class="w-full lg:w-1/2 relative">
@@ -222,20 +203,20 @@
                         <i class="fas fa-calendar-alt text-xl"></i>
                     </div>
                     <div>
-                        <p class="text-xs text-defaults-blue font-semibold uppercase">Berdiri Pada</p>
+                        <p class="text-xs text-defaults-blue font-semibold uppercase">Berdiri Sejak</p>
                         <p class="text-lg font-bold text-gray-900">04 Maret 2003</p>
                     </div>
                 </div>
             </div>
             
             <div class="w-full lg:w-1/2">
-                <p class="text-sm font-bold text-defaults-blue tracking-wider uppercase mb-2">TENTANG PERUSAHAAN</p>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Arunika Nusantara Teknologi</h2>
+                <p class="text-sm font-bold text-defaults-blue tracking-wider uppercase mb-2">TENTANG YAYASAN</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Yayasan Tunas Mandiri Bhakti Yudha</h2>
                 <p class="text-gray-600 mb-8 leading-relaxed">
-                    Arunika Nusantara Teknologi (ANT) adalah perusahaan teknologi Indonesia yang menyediakan solusi digital untuk membantu bisnis, instansi, dan organisasi meningkatkan efisiensi, produktivitas, serta kualitas layanan melalui teknologi.
+                    Yayasan Tunas Mandiri Bhakti Yudha berkomitmen mendukung pendidikan yang membangun pengetahuan, karakter, dan kemandirian. Bersama keluarga dan masyarakat, kami ingin menumbuhkan lingkungan belajar yang aman, inklusif, dan mendorong setiap peserta didik mengembangkan potensinya.
                 </p>
                 <button class="bg-defaults-yellow text-defaults-navy font-medium px-6 py-3 rounded-full hover:bg-amber-500 transition inline-flex items-center text-sm md:text-base">
-                    Selengkapnya Tentang Perusahaan <i class="fas fa-arrow-right ml-2"></i>
+                    Selengkapnya Tentang Yayasan <i class="fas fa-arrow-right ml-2"></i>
                 </button>
             </div>
         </div>
@@ -246,96 +227,95 @@
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
             <div class="max-w-2xl">
                 <p class="text-sm font-bold text-defaults-blue tracking-wider uppercase mb-2">
-                    LAYANAN KAMI
+                    PROGRAM PENDIDIKAN
                 </p>
 
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Solusi Digital untuk Bisnis
+                    Belajar, Bertumbuh, dan Berkarya
                 </h2>
 
                 <p class="text-gray-600">
-                    Nusa Digital Solusi menyediakan berbagai layanan teknologi untuk membantu
-                    bisnis dan organisasi meningkatkan efisiensi, memperluas jangkauan,
-                    serta mempercepat transformasi digital.
+                    Program pendidikan dirancang untuk mendukung perkembangan pengetahuan,
+                    karakter, kreativitas, dan keterampilan peserta didik.
                 </p>
             </div>
 
             <a href="#" class="text-defaults-blue font-medium hover:underline inline-flex items-center whitespace-nowrap">
-                Lihat Semua Layanan
+                Kenali Program Kami
                 <i class="fas fa-arrow-right ml-2 text-sm"></i>
             </a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <div class="program-card bg-defaults-yellow rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
+            <div class="program-card bg-[#ffeb3b] rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
                 <div class="bg-white/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-globe text-xl"></i>
+                    <i class="fas fa-heart text-xl"></i>
                 </div>
 
-                <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                <h3 class="text-xl font-bold mb-3">Pendidikan Karakter</h3>
 
                 <p class="text-sm text-amber-950 mb-6 flex-grow">
-                    Membangun website profesional, responsif, dan modern untuk meningkatkan
-                    kehadiran digital serta kredibilitas bisnis Anda.
+                    Menumbuhkan sikap tanggung jawab, kepedulian, disiplin, dan rasa hormat
+                    dalam keseharian belajar.
                 </p>
             </div>
 
-            <div class="program-card bg-defaults-yellow rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
+            <div class="program-card bg-[#ffeb3b] rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
                 <div class="bg-white/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-mobile-alt text-xl"></i>
+                    <i class="fas fa-book-open text-xl"></i>
                 </div>
 
-                <h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
+                <h3 class="text-xl font-bold mb-3">Literasi & Numerasi</h3>
 
                 <p class="text-sm text-amber-950 mb-6 flex-grow">
-                    Mengembangkan aplikasi mobile yang intuitif dan scalable untuk membantu
-                    bisnis memberikan layanan terbaik kepada pelanggan.
+                    Menguatkan kemampuan membaca, memahami informasi, berpikir kritis,
+                    dan menggunakan matematika dalam kehidupan sehari-hari.
                 </p>
             </div>
 
-            <div class="program-card bg-defaults-yellow rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
+            <div class="program-card bg-[#ffeb3b] rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
                 <div class="bg-white/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-cogs text-xl"></i>
+                    <i class="fas fa-palette text-xl"></i>
                 </div>
 
-                <h3 class="text-xl font-bold mb-3">Sistem Informasi</h3>
+                <h3 class="text-xl font-bold mb-3">Kreativitas & Bakat</h3>
 
                 <p class="text-sm text-amber-950 mb-6 flex-grow">
-                    Menghadirkan sistem informasi terintegrasi untuk mengelola data,
-                    operasional, dan proses bisnis secara lebih efektif dan efisien.
+                    Memberi ruang bagi peserta didik untuk bereksplorasi, berkarya,
+                    dan mengenali minat serta potensinya.
                 </p>
             </div>
 
-            <div class="program-card bg-defaults-yellow rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
+            <div class="program-card bg-[#ffeb3b] rounded-2xl p-8 text-defaults-navy flex flex-col h-full hover:-translate-y-2 transition duration-300">
                 <div class="bg-white/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-chart-line text-xl"></i>
+                    <i class="fas fa-laptop text-xl"></i>
                 </div>
 
-                <h3 class="text-xl font-bold mb-3">Digital Transformation</h3>
+                <h3 class="text-xl font-bold mb-3">Keterampilan Digital</h3>
 
                 <p class="text-sm text-amber-950 mb-6 flex-grow">
-                    Membantu perusahaan mengoptimalkan teknologi, menyederhanakan proses,
-                    dan menciptakan strategi digital untuk pertumbuhan bisnis.
+                    Mengenalkan pemanfaatan teknologi secara kreatif, bijak, aman,
+                    dan bertanggung jawab.
                 </p>
             </div>
 
         </div>
     </section>
 
-    <section class="py-20 px-4 lg:px-80 bg-gray-100">
+    <section id="news" class="py-20 px-4 lg:px-80 bg-gray-100">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
             <div class="max-w-2xl">
                 <p class="text-sm font-bold text-defaults-blue tracking-wider uppercase mb-2">
-                    INSIGHT & BERITA
+                    WAWASAN PENDIDIKAN
                 </p>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
-                    Berita & Insight Terbaru
+                    Inspirasi Belajar & Pendidikan
                 </h2>
             </div>
 
             <a href="#" class="text-defaults-blue font-medium hover:underline inline-flex items-center whitespace-nowrap">
-                Lihat Semua Artikel
+                Lihat Semua Berita
                 <i class="fas fa-arrow-right ml-2 text-sm"></i>
             </a>
         </div>
@@ -346,7 +326,7 @@
             <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="relative h-56 overflow-hidden">
                     <img src="images/students1.jpg"
-                        alt="Transformasi Digital untuk Bisnis"
+                        alt="Siswa mengikuti kegiatan belajar di kelas"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
 
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
@@ -360,19 +340,19 @@
 
                     <div class="absolute bottom-4 left-4">
                         <span class="bg-defaults-yellow text-defaults-navy text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                            Teknologi
+                            Pembelajaran
                         </span>
                     </div>
                 </div>
 
                 <div class="p-5">
                     <h3 class="font-bold text-lg text-gray-900 leading-snug line-clamp-2 group-hover:text-defaults-blue transition-colors duration-300">
-                        Mengapa Transformasi Digital Penting untuk Pertumbuhan Bisnis?
+                        Belajar Aktif Membantu Anak Memahami Dunia
                     </h3>
 
                     <p class="text-sm text-gray-500 mt-3 line-clamp-2 leading-relaxed">
-                        Transformasi digital membantu perusahaan meningkatkan efisiensi,
-                        mempercepat proses bisnis, dan memberikan pengalaman pelanggan yang lebih baik.
+                        Pembelajaran yang melibatkan rasa ingin tahu mendorong peserta didik
+                        memahami konsep dan menerapkannya dalam kehidupan sehari-hari.
                     </p>
 
                     <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
@@ -393,7 +373,7 @@
             <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="relative h-56 overflow-hidden">
                     <img src="images/students2.jpg"
-                        alt="Website Profesional untuk Bisnis"
+                        alt="Siswa belajar dan membaca bersama"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
 
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
@@ -407,19 +387,19 @@
 
                     <div class="absolute bottom-4 left-4">
                         <span class="bg-defaults-yellow text-defaults-navy text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                            Bisnis
+                            Literasi
                         </span>
                     </div>
                 </div>
 
                 <div class="p-5">
                     <h3 class="font-bold text-lg text-gray-900 leading-snug line-clamp-2 group-hover:text-defaults-blue transition-colors duration-300">
-                        Peran Website Profesional dalam Meningkatkan Kepercayaan Pelanggan
+                        Menumbuhkan Kebiasaan Membaca Sejak Dini
                     </h3>
 
                     <p class="text-sm text-gray-500 mt-3 line-clamp-2 leading-relaxed">
-                        Website bukan hanya sebagai identitas digital, tetapi juga menjadi
-                        bagian penting dalam membangun kredibilitas dan kepercayaan pelanggan.
+                        Lingkungan yang dekat dengan buku membantu anak memperluas wawasan,
+                        mengembangkan imajinasi, dan membangun kemampuan berbahasa.
                     </p>
 
                     <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
@@ -440,7 +420,7 @@
             <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="relative h-56 overflow-hidden">
                     <img src="images/students3.jpg"
-                        alt="Sistem Informasi Terintegrasi"
+                        alt="Siswa belajar menggunakan teknologi"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
 
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
@@ -454,19 +434,19 @@
 
                     <div class="absolute bottom-4 left-4">
                         <span class="bg-defaults-yellow text-defaults-navy text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                            Solusi Digital
+                            Teknologi Pendidikan
                         </span>
                     </div>
                 </div>
 
                 <div class="p-5">
                     <h3 class="font-bold text-lg text-gray-900 leading-snug line-clamp-2 group-hover:text-defaults-blue transition-colors duration-300">
-                        Membangun Sistem Informasi yang Efisien dan Terintegrasi
+                        Menggunakan Teknologi Secara Bijak dalam Pembelajaran
                     </h3>
 
                     <p class="text-sm text-gray-500 mt-3 line-clamp-2 leading-relaxed">
-                        Sistem informasi yang terintegrasi membantu perusahaan mengelola
-                        data dan operasional secara lebih cepat, akurat, dan terstruktur.
+                        Teknologi dapat menjadi sarana belajar yang bermanfaat saat digunakan
+                        secara aman, seimbang, dan bertanggung jawab.
                     </p>
 
                     <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
@@ -487,7 +467,7 @@
             <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="relative h-56 overflow-hidden">
                     <img src="images/students4.jpg"
-                        alt="Strategi Digitalisasi UMKM"
+                        alt="Kegiatan kolaboratif peserta didik"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
 
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
@@ -501,19 +481,19 @@
 
                     <div class="absolute bottom-4 left-4">
                         <span class="bg-defaults-yellow text-defaults-navy text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                            Insight
+                            Kegiatan Siswa
                         </span>
                     </div>
                 </div>
 
                 <div class="p-5">
                     <h3 class="font-bold text-lg text-gray-900 leading-snug line-clamp-2 group-hover:text-defaults-blue transition-colors duration-300">
-                        Strategi Digitalisasi untuk Membawa Bisnis ke Level Berikutnya
+                        Kolaborasi dan Kreativitas di Lingkungan Sekolah
                     </h3>
 
                     <p class="text-sm text-gray-500 mt-3 line-clamp-2 leading-relaxed">
-                        Memanfaatkan teknologi secara tepat dapat membuka peluang baru,
-                        memperluas pasar, dan membantu bisnis beradaptasi dengan perubahan.
+                        Kegiatan bersama memberi kesempatan kepada peserta didik untuk
+                        berbagi gagasan, bekerja dalam tim, dan berani berkarya.
                     </p>
 
                     <div class="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
@@ -547,14 +527,14 @@
                     </h3>
 
                     <p class="text-amber-950 mb-8">
-                        Dapatkan informasi terbaru seputar layanan, program,
-                        peluang karier, dan berbagai aktivitas PT Arunika Teknologi Nusantara.
+                        Temukan informasi seputar program pendidikan, kegiatan peserta didik,
+                        agenda, dan kabar terbaru dari Yayasan Tunas Mandiri Bhakti Yudha.
                     </p>
                 </div>
 
                 <div>
                     <button class="bg-defaults-yellow text-defaults-blue font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition inline-flex items-center text-sm w-fit">
-                        Lihat Semua Informasi
+                        Lihat Agenda Pendidikan
                         <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -580,7 +560,7 @@
                         </span>
 
                         <h4 class="lg:text-lg text-md font-bold text-gray-900 group-hover:text-defaults-blue transition mb-1">
-                            Arunika Tech Membuka Kesempatan Karier Baru
+                            Informasi Pendaftaran dan Layanan Pendidikan
                         </h4>
 
                         <a href="#" class="text-gray-500 text-sm flex items-center group-hover:text-defaults-blue">
@@ -609,7 +589,7 @@
                         </span>
 
                         <h4 class="lg:text-lg text-md font-bold text-gray-900 group-hover:text-defaults-blue transition mb-1">
-                            Arunika Tech Meluncurkan Layanan Digital Terbaru
+                            Kalender Akademik dan Agenda Kegiatan
                         </h4>
 
                         <a href="#" class="text-gray-500 text-sm flex items-center group-hover:text-defaults-blue">
@@ -638,7 +618,7 @@
                         </span>
 
                         <h4 class="lg:text-lg text-md font-bold text-gray-900 group-hover:text-defaults-blue transition mb-1">
-                            Arunika Tech Memperluas Kolaborasi dengan Mitra Strategis
+                            Kolaborasi Keluarga dan Sekolah dalam Pendidikan
                         </h4>
 
                         <a href="#" class="text-gray-500 text-sm flex items-center group-hover:text-defaults-blue">
@@ -652,32 +632,32 @@
         </div>
     </section>
 
-    <section class="py-20 px-4 lg:px-80 bg-defaults-yellow text-defaults-navy">
+    <section class="py-20 px-4 lg:px-80 bg-defaults-navy text-white">
         <div class="flex flex-col lg:flex-row gap-12 items-center">
 
             <!-- Intro -->
             <div class="w-full lg:w-1/3">
                 <p class="text-sm font-bold text-defaults-yellow tracking-wider uppercase mb-2">
-                    LAYANAN DIGITAL
+                    DUKUNGAN PEMBELAJARAN
                 </p>
 
                 <h2 class="text-3xl lg:text-4xl font-bold mb-4">
-                    Semua kebutuhan bisnis, lebih mudah
+                    Bersama Mendukung Perjalanan Belajar
                 </h2>
 
-                <p class="text-amber-950 mb-8 text-sm leading-relaxed">
-                    Arunika Tech menghadirkan berbagai layanan digital terintegrasi
-                    untuk membantu perusahaan, mitra, dan pelanggan mendapatkan
-                    akses layanan yang cepat, mudah, dan efisien.
+                <p class="text-amber-100 mb-8 text-sm leading-relaxed">
+                    Pendidikan tumbuh lebih kuat melalui kerja sama peserta didik,
+                    pendidik, keluarga, dan masyarakat. Mari ciptakan pengalaman belajar
+                    yang bermakna dan mendukung masa depan setiap anak.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
-                    <button class="bg-defaults-yellow text-defaults-blue font-semibold px-6 py-2.5 rounded-full hover:bg-yellow-500 transition text-sm">
-                        Portal Klien
+                    <button class="bg-defaults-yellow text-defaults-navy font-semibold px-6 py-2.5 rounded-full hover:bg-yellow-500 transition text-sm">
+                        Informasi Pendaftaran
                     </button>
 
                     <button class="bg-transparent border border-white text-white font-semibold px-6 py-2.5 rounded-full hover:bg-white/10 transition text-sm">
-                        Pusat Bantuan
+                        Hubungi Yayasan
                     </button>
                 </div>
             </div>
@@ -687,32 +667,32 @@
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-user-circle text-defaults-yellow"></i>
-                    <span>Portal Pelanggan</span>
+                    <span>Informasi Program</span>
                 </button>
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-file-invoice text-defaults-yellow"></i>
-                    <span>Invoice & Pembayaran</span>
+                    <span>Kalender Akademik</span>
                 </button>
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-headset text-defaults-yellow"></i>
-                    <span>Customer Support</span>
+                    <span>Kegiatan Peserta Didik</span>
                 </button>
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-tools text-defaults-yellow"></i>
-                    <span>Request Layanan</span>
+                    <span>Informasi Pendaftaran</span>
                 </button>
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-chart-line text-defaults-yellow"></i>
-                    <span>Laporan & Analitik</span>
+                    <span>Materi Pembelajaran</span>
                 </button>
 
                 <button class="bg-white/10 border border-white/20 hover:bg-white/20 text-left px-6 py-4 rounded-xl transition text-sm font-medium flex items-center gap-4">
                     <i class="fas fa-shield-alt text-defaults-yellow"></i>
-                    <span>Keamanan & Privasi</span>
+                    <span>Dukungan Orang Tua</span>
                 </button>
 
             </div>
@@ -720,31 +700,29 @@
     </section>
 
     
-    <footer class="bg-[#111111] text-gray-300 pt-16 pb-6 px-4 lg:px-80">
+    <footer id="contact" class="bg-[#111111] text-gray-300 pt-16 pb-6 px-4 lg:px-80">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
             <!-- Company -->
             <div>
                 <div class="flex items-center justify-center lg:justify-start space-x-3 mb-6">
-                    <img src="https://placehold.co/40x40/155e9a/FFFFFF?text=A"
-                        alt="Logo Arunika Tech"
+                    <img src="images/logo.png"
+                        alt="Logo Yayasan Tunas Mandiri Bhakti Yudha"
                         class="h-12 w-12 rounded-xl">
 
                     <div class="leading-tight">
-                        <h1 class="text-white font-bold text-sm">ARUNIKA TECH</h1>
+                        <h1 class="text-white font-bold text-sm">YAYASAN TUNAS MANDIRI</h1>
                         <p class="text-xs text-gray-400 tracking-wider">
-                            TEKNOLOGI NUSANTARA
+                            BHAKTI YUDHA
                         </p>
                     </div>
                 </div>
 
                 <div class="space-y-2 text-sm text-center lg:text-left">
                     <p>
-                        PT Arunika Teknologi Nusantara<br>
-                        Tembilahan, Riau, Indonesia
+                        Yayasan Tunas Mandiri Bhakti Yudha<br>
+                        Komitmen untuk pendidikan dan masa depan generasi
                     </p>
-                    <p>Telepon: +62 811-XXXX-XXXX</p>
-                    <p>Email: info@arunikatech.id</p>
                 </div>
             </div>
 
@@ -758,63 +736,63 @@
                 <ul class="space-y-3 text-sm">
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Tentang Kami
+                            Profil Yayasan
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Layanan
+                            Unit Pendidikan
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Produk
+                            Program Unggulan
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Karier
+                            Fasilitas
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Berita
+                            Berita & Kegiatan
                         </a>
                     </li>
                 </ul>
             </div>
 
 
-            <!-- Layanan -->
+            <!-- Program Pendidikan -->
             <div class="hidden lg:block">
                 <h4 class="text-white font-bold mb-6">
-                    Layanan
+                    Program Pendidikan
                 </h4>
 
                 <ul class="space-y-3 text-sm">
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Solusi Digital
+                            Pendidikan Karakter
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Pengembangan Aplikasi
+                            Literasi & Numerasi
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Konsultasi Teknologi
+                            Kreativitas & Bakat
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Cloud & Infrastruktur
+                            Keterampilan Digital
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-white transition">
-                            Dukungan Teknis
+                            Dukungan Pembelajaran
                         </a>
                     </li>
                 </ul>
@@ -863,7 +841,7 @@
         <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
 
             <p>
-                Copyright 2026 - PT Arunika Teknologi Nusantara
+                Copyright 2026 - Yayasan Tunas Mandiri Bhakti Yudha
             </p>
 
             <div class="flex space-x-4 mt-4 md:mt-0 hidden lg:block">

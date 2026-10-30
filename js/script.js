@@ -1,19 +1,19 @@
 ﻿const heroContents = [
     {
-        title: "Teknologi untuk Masa Depan",
-        tagline: "PT Arunika Teknologi Nusantara menghadirkan solusi digital inovatif untuk membantu bisnis berkembang lebih cepat, efisien, dan berkelanjutan."
+        title: "Membangun Generasi Masa Depan",
+        tagline: "Yayasan kami berkomitmen menghadirkan pendidikan berkualitas untuk membentuk generasi yang cerdas, berkarakter, berakhlak mulia, dan siap menghadapi tantangan masa depan."
     },
     {
-        title: "Membangun Solusi Digital",
-        tagline: "Kami mengembangkan teknologi yang dirancang untuk menjawab kebutuhan bisnis dan memberikan pengalaman digital yang lebih baik."
+        title: "Pendidikan untuk Semua",
+        tagline: "Mewujudkan kesempatan pendidikan yang merata dan berkualitas bagi setiap anak melalui lingkungan belajar yang nyaman, inklusif, dan inspiratif."
     },
     {
-        title: "Inovasi Tanpa Batas",
-        tagline: "Menggabungkan kreativitas, teknologi, dan keahlian untuk menciptakan solusi yang memberikan nilai nyata bagi pelanggan dan mitra."
+        title: "Mencetak Generasi Berprestasi",
+        tagline: "Mengembangkan potensi, kreativitas, dan bakat peserta didik melalui pembelajaran inovatif serta pendampingan yang berorientasi pada prestasi dan karakter."
     },
     {
-        title: "Berkembang Bersama Teknologi",
-        tagline: "Menjadi mitra teknologi terpercaya bagi perusahaan dan organisasi dalam menghadapi tantangan dan peluang di era digital."
+        title: "Bersama Membangun Masa Depan",
+        tagline: "Bersinergi dengan orang tua, tenaga pendidik, dan masyarakat untuk menciptakan lingkungan pendidikan yang unggul demi masa depan generasi penerus bangsa."
     }
 ];
 
