@@ -28,6 +28,23 @@
 .program-card:nth-child(3) { background-position: 35% center; }
 .program-card:nth-child(4) { background-position: right center; }
 
+.about-gradient-section {
+    background: linear-gradient(120deg, #451a03, #78350f, #92400e, #5b2b08, #451a03);
+    background-size: 300% 300%;
+    animation: aboutGradientShift 18s ease-in-out infinite;
+}
+
+@keyframes aboutGradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-gradient-section {
+        animation: none;
+    }
+}
+
 @keyframes heroZoom {
     from { transform: scale(1.02); }
     to { transform: scale(1.08); }
