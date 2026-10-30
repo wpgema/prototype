@@ -64,95 +64,88 @@ const tagline = document.getElementById("hero-tagline");
 let visibleImage = document.getElementById("hero-image");
 let incomingImage = document.getElementById("hero-image-next");
 
-setInterval(() => {
-    // Fade out
-    title.classList.add("opacity-0", "translate-y-1", "blur-[1px]");
-    tagline.classList.add("opacity-0", "translate-y-1", "blur-[1px]");
+if (title && tagline && visibleImage && incomingImage) {
+    setInterval(() => {
+        // Fade out
+        title.classList.add("opacity-0", "translate-y-1", "blur-[1px]");
+        tagline.classList.add("opacity-0", "translate-y-1", "blur-[1px]");
 
-    const nextImageIndex = (currentIndex + 1) % heroImages.length;
-    incomingImage.src = heroImages[nextImageIndex];
-    incomingImage.classList.remove("hero-image-zoom");
-    void incomingImage.offsetWidth;
-    incomingImage.classList.add("hero-image-zoom");
-
-    incomingImage.onload = () => {
-        incomingImage.classList.remove("opacity-0");
-        visibleImage.classList.add("opacity-0");
-    };
-
-    setTimeout(() => {
-        // Next content
-        currentIndex = (currentIndex + 1) % heroContents.length;
-
-        title.textContent = heroContents[currentIndex].title;
-        tagline.textContent = heroContents[currentIndex].tagline;
-
-        // Fade in
-        title.classList.remove("opacity-0", "translate-y-1", "blur-[1px]");
-        tagline.classList.remove("opacity-0", "translate-y-1", "blur-[1px]");
-    }, transitionDuration);
-
-    setTimeout(() => {
-        const previousImage = visibleImage;
-        visibleImage = incomingImage;
-        incomingImage = previousImage;
+        const nextImageIndex = (currentIndex + 1) % heroImages.length;
+        incomingImage.src = heroImages[nextImageIndex];
         incomingImage.classList.remove("hero-image-zoom");
-        incomingImage.classList.add("opacity-0");
-    }, transitionDuration + 50);
+        void incomingImage.offsetWidth;
+        incomingImage.classList.add("hero-image-zoom");
 
-}, 5000);
+        incomingImage.onload = () => {
+            incomingImage.classList.remove("opacity-0");
+            visibleImage.classList.add("opacity-0");
+        };
+
+        setTimeout(() => {
+            // Next content
+            currentIndex = (currentIndex + 1) % heroContents.length;
+
+            title.textContent = heroContents[currentIndex].title;
+            tagline.textContent = heroContents[currentIndex].tagline;
+
+            // Fade in
+            title.classList.remove("opacity-0", "translate-y-1", "blur-[1px]");
+            tagline.classList.remove("opacity-0", "translate-y-1", "blur-[1px]");
+        }, transitionDuration);
+
+        setTimeout(() => {
+            const previousImage = visibleImage;
+            visibleImage = incomingImage;
+            incomingImage = previousImage;
+            incomingImage.classList.remove("hero-image-zoom");
+            incomingImage.classList.add("opacity-0");
+        }, transitionDuration + 50);
+    }, 5000);
+}
 
 const container = document.getElementById('particles-container');
 
 const particleCount = 28;
 
-for (let i = 0; i < particleCount; i++) {
+if (container) {
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
 
-    const particle = document.createElement('div');
+        // Posisi awal random
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
 
-    particle.classList.add('particle');
+        // Ukuran random
+        const size = Math.random() * 4 + 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
 
-    // Posisi awal random
-    particle.style.left = `${Math.random() * 100}%`;
-    particle.style.top = `${Math.random() * 100}%`;
+        // Durasi random
+        const duration = Math.random() * 4 + 4;
+        particle.style.setProperty('--duration', `${duration}s`);
 
-    // Ukuran random
-    const size = Math.random() * 4 + 2;
-    particle.style.width = `${size}px`;
-    particle.style.height = `${size}px`;
+        // Delay random
+        const delay = Math.random() * 6;
+        particle.style.setProperty('--delay', `${delay}s`);
 
-    // Durasi random
-    const duration = Math.random() * 4 + 4;
-    particle.style.setProperty(
-        '--duration',
-        `${duration}s`
-    );
+        // Arah gerakan random
+        const startX = (Math.random() - 0.5) * 50;
+        const startY = (Math.random() - 0.5) * 50;
 
-    // Delay random
-    const delay = Math.random() * 6;
-    particle.style.setProperty(
-        '--delay',
-        `${delay}s`
-    );
+        const moveX = (Math.random() - 0.5) * 80;
+        const moveY = (Math.random() - 0.5) * 80;
 
-    // Arah gerakan random
-    const startX = (Math.random() - 0.5) * 50;
-    const startY = (Math.random() - 0.5) * 50;
+        const endX = (Math.random() - 0.5) * 120;
+        const endY = (Math.random() - 0.5) * 120;
 
-    const moveX = (Math.random() - 0.5) * 80;
-    const moveY = (Math.random() - 0.5) * 80;
+        particle.style.setProperty('--start-x', `${startX}px`);
+        particle.style.setProperty('--start-y', `${startY}px`);
+        particle.style.setProperty('--move-x', `${moveX}px`);
+        particle.style.setProperty('--move-y', `${moveY}px`);
+        particle.style.setProperty('--end-x', `${endX}px`);
+        particle.style.setProperty('--end-y', `${endY}px`);
 
-    const endX = (Math.random() - 0.5) * 120;
-    const endY = (Math.random() - 0.5) * 120;
-
-    particle.style.setProperty('--start-x', `${startX}px`);
-    particle.style.setProperty('--start-y', `${startY}px`);
-
-    particle.style.setProperty('--move-x', `${moveX}px`);
-    particle.style.setProperty('--move-y', `${moveY}px`);
-
-    particle.style.setProperty('--end-x', `${endX}px`);
-    particle.style.setProperty('--end-y', `${endY}px`);
-
-    container.appendChild(particle);
+        container.appendChild(particle);
+    }
 }
