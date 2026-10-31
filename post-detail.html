@@ -60,11 +60,49 @@
             <div class="hidden lg:flex gap-x-6 items-center text-sm font-medium text-gray-700">
                 <div class="group relative cursor-pointer py-4 order-1"><a href="index.html" class="hover:text-defaults-blue">Beranda</a></div>
                 <div class="group relative cursor-pointer py-4 order-2"><a href="about.html" class="hover:text-defaults-blue">Profil Yayasan</a></div>
-                <div class="group relative cursor-pointer py-4 order-3"><a href="index.html#services" class="hover:text-defaults-blue">Unit Pendidikan</a></div>
+                <div class="education-menu-trigger group relative cursor-pointer py-4 order-3">
+                    <a href="" aria-haspopup="true" aria-controls="education-mega-menu" class="inline-flex items-center gap-2 hover:text-defaults-blue">
+                        Unit Pendidikan <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="group relative cursor-pointer py-4 order-4"><a href="structure.html" class="hover:text-defaults-blue">Struktur Yayasan</a></div>
                 <div class="group relative cursor-pointer py-4 order-5"><a href="facility.html" class="hover:text-defaults-blue">Fasilitas</a></div>
                 <div class="group relative cursor-pointer py-4 order-6"><a href="posts.html" class="text-defaults-blue bg-defaults-mist px-3 py-2 rounded-md">Berita & Kegiatan</a></div>
                 <div class="group relative cursor-pointer py-4 order-7"><a href="contacts.html" class="hover:text-defaults-blue">Kontak</a></div>
+            </div>
+        </div>
+        <div id="education-mega-menu" class="mega-menu absolute left-1/2 top-full z-50 hidden w-[min(80rem,90vw)] max-w-7xl -translate-x-1/2 pt-3" aria-label="Submenu Unit Pendidikan">
+            <div class="grid grid-cols-3 gap-5 rounded-2xl bg-white p-5 shadow-2xl">
+                <div class="col-span-1 rounded-xl bg-defaults-blue p-6 text-white">
+                    <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
+                        <i class="fas fa-school" aria-hidden="true"></i>
+                    </div>
+                    <p class="mb-2 text-xs font-bold uppercase tracking-wider text-defaults-yellow">PENDIDIKAN</p>
+                    <h2 class="text-xl font-bold leading-snug">Temukan jenjang belajar yang sesuai</h2>
+                    <p class="mt-3 text-sm leading-relaxed text-amber-100">Dari pengalaman belajar usia dini hingga persiapan menuju jenjang berikutnya.</p>
+                </div>
+                <div class="col-span-2 grid grid-cols-2 gap-3">
+                    <a href="#kb" class="rounded-xl border border-gray-100 p-4 transition hover:border-amber-200 hover:bg-defaults-mist focus:bg-defaults-mist">
+                        <span class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-defaults-yellow text-defaults-navy"><i class="fas fa-shapes" aria-hidden="true"></i></span>
+                        <span class="block font-bold text-gray-900">Kelompok Belajar</span>
+                        <span class="mt-1 block text-xs text-gray-500">Belajar melalui bermain dan eksplorasi.</span>
+                    </a>
+                    <a href="#tk" class="rounded-xl border border-gray-100 p-4 transition hover:border-amber-200 hover:bg-defaults-mist focus:bg-defaults-mist">
+                        <span class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-defaults-yellow text-defaults-navy"><i class="fas fa-child" aria-hidden="true"></i></span>
+                        <span class="block font-bold text-gray-900">Taman Kanak-kanak</span>
+                        <span class="mt-1 block text-xs text-gray-500">Membangun kesiapan dan kemandirian.</span>
+                    </a>
+                    <a href="#sd" class="rounded-xl border border-gray-100 p-4 transition hover:border-amber-200 hover:bg-defaults-mist focus:bg-defaults-mist">
+                        <span class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-defaults-yellow text-defaults-navy"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                        <span class="block font-bold text-gray-900">Sekolah Dasar</span>
+                        <span class="mt-1 block text-xs text-gray-500">Menguatkan pengetahuan dan karakter.</span>
+                    </a>
+                    <a href="#smp" class="rounded-xl border border-gray-100 p-4 transition hover:border-amber-200 hover:bg-defaults-mist focus:bg-defaults-mist">
+                        <span class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-defaults-yellow text-defaults-navy"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+                        <span class="block font-bold text-gray-900">Sekolah Menengah Pertama</span>
+                        <span class="mt-1 block text-xs text-gray-500">Mengembangkan wawasan dan kemandirian.</span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -79,7 +117,15 @@
             <ul class="space-y-1 text-sm font-medium text-gray-700">
                 <li><a href="index.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Beranda</a></li>
                 <li><a href="about.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Profil Yayasan</a></li>
-                <li><a href="index.html#services" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Unit Pendidikan</a></li>
+                <li>
+                    <a href="" class="block rounded-md px-3 py-3 font-semibold hover:bg-defaults-mist hover:text-defaults-blue">Unit Pendidikan</a>
+                    <ul class="ml-3 space-y-1 border-l-2 border-amber-200 pl-3 text-gray-600">
+                        <li><a href="#kb" class="block rounded-md px-3 py-2 hover:bg-defaults-mist hover:text-defaults-blue">Kelompok Belajar</a></li>
+                        <li><a href="#tk" class="block rounded-md px-3 py-2 hover:bg-defaults-mist hover:text-defaults-blue">Taman Kanak-kanak</a></li>
+                        <li><a href="#sd" class="block rounded-md px-3 py-2 hover:bg-defaults-mist hover:text-defaults-blue">Sekolah Dasar</a></li>
+                        <li><a href="#smp" class="block rounded-md px-3 py-2 hover:bg-defaults-mist hover:text-defaults-blue">Sekolah Menengah Pertama</a></li>
+                    </ul>
+                </li>
                 <li><a href="structure.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Struktur Yayasan</a></li>
                 <li><a href="facility.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Fasilitas</a></li>
                 <li><a href="posts.html" aria-current="page" class="block rounded-md px-3 py-3 bg-defaults-mist text-defaults-blue">Berita & Kegiatan</a></li>
