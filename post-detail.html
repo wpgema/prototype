@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Aktif Membantu Anak Memahami Dunia - Yayasan Tunas Mandiri Bhakti Yudha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        defaults: {
+                            blue: '#b45309',
+                            navy: '#451a03',
+                            yellow: '#fbbf24',
+                            mist: '#fffbeb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+    <div class="bg-defaults-yellow text-defaults-navy text-[10px] sm:text-xs py-2 px-4 lg:px-80 flex flex-col sm:flex-row justify-between items-center hidden lg:flex">
+        <div class="flex space-x-6 uppercase font-semibold">
+            <a href="about.html" class="hover:text-amber-700">Profil Yayasan</a>
+            <a href="index.html#services" class="hover:text-amber-700">Unit Pendidikan</a>
+            <a href="structure.html" class="hover:text-amber-700">Struktur Yayasan</a>
+            <a href="facility.html" class="hover:text-amber-700">Fasilitas</a>
+            <a href="posts.html" class="hover:text-amber-700">Berita & Kegiatan</a>
+            <a href="contacts.html" class="hover:text-amber-700">Kontak</a>
+        </div>
+        <div class="flex space-x-3 mt-2 sm:mt-0">
+            <a href="#" aria-label="Bantuan"><i class="fas fa-question-circle"></i></a>
+            <a href="#" aria-label="Bahasa"><i class="fas fa-language"></i></a>
+            <a href="#" aria-label="Akun"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm relative">
+        <div class="px-4 lg:px-80 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2" aria-label="Beranda Yayasan Tunas Mandiri Bhakti Yudha">
+                <img src="images/logo.png" alt="Logo Yayasan Tunas Mandiri Bhakti Yudha" class="h-10 w-10 rounded-full">
+                <div class="leading-tight">
+                    <span class="block text-defaults-blue font-bold text-sm lg:text-base">Yayasan Tunas Mandiri</span>
+                    <span class="block text-xs text-gray-600 tracking-wider">Bhakti Yudha</span>
+                </div>
+            </a>
+            <div class="lg:hidden">
+                <button id="mobile-menu-toggle" type="button" class="text-gray-600 focus:outline-none" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="mobile-menu-icon" class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="hidden lg:flex gap-x-6 items-center text-sm font-medium text-gray-700">
+                <div class="group relative cursor-pointer py-4 order-1"><a href="index.html" class="hover:text-defaults-blue">Beranda</a></div>
+                <div class="group relative cursor-pointer py-4 order-2"><a href="about.html" class="hover:text-defaults-blue">Profil Yayasan</a></div>
+                <div class="group relative cursor-pointer py-4 order-3"><a href="index.html#services" class="hover:text-defaults-blue">Unit Pendidikan</a></div>
+                <div class="group relative cursor-pointer py-4 order-4"><a href="structure.html" class="hover:text-defaults-blue">Struktur Yayasan</a></div>
+                <div class="group relative cursor-pointer py-4 order-5"><a href="facility.html" class="hover:text-defaults-blue">Fasilitas</a></div>
+                <div class="group relative cursor-pointer py-4 order-6"><a href="posts.html" class="text-defaults-blue bg-defaults-mist px-3 py-2 rounded-md">Berita & Kegiatan</a></div>
+                <div class="group relative cursor-pointer py-4 order-7"><a href="contacts.html" class="hover:text-defaults-blue">Kontak</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <button id="mobile-menu-backdrop" type="button" class="fixed inset-0 z-[60] bg-gray-900/50 opacity-0 invisible pointer-events-none transition-opacity duration-300 lg:hidden" aria-label="Tutup menu navigasi" aria-hidden="true" inert></button>
+    <aside id="mobile-menu" class="fixed inset-y-0 left-0 z-[70] w-[min(20rem,85vw)] -translate-x-full overflow-y-auto bg-white shadow-2xl transition-transform duration-300 ease-in-out lg:hidden" aria-label="Navigasi utama" aria-hidden="true" inert>
+        <div class="border-b border-gray-100 bg-defaults-yellow px-6 py-6 text-defaults-navy">
+            <p class="text-xs font-semibold uppercase">Yayasan Tunas Mandiri</p>
+            <p class="mt-1 text-sm text-amber-950">Bhakti Yudha</p>
+        </div>
+        <nav class="px-6 py-5" aria-label="Menu mobile">
+            <ul class="space-y-1 text-sm font-medium text-gray-700">
+                <li><a href="index.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Beranda</a></li>
+                <li><a href="about.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Profil Yayasan</a></li>
+                <li><a href="index.html#services" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Unit Pendidikan</a></li>
+                <li><a href="structure.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Struktur Yayasan</a></li>
+                <li><a href="facility.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Fasilitas</a></li>
+                <li><a href="posts.html" aria-current="page" class="block rounded-md px-3 py-3 bg-defaults-mist text-defaults-blue">Berita & Kegiatan</a></li>
+                <li><a href="contacts.html" class="block rounded-md px-3 py-3 hover:bg-defaults-mist hover:text-defaults-blue">Kontak</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="about-gradient-section py-10 lg:py-14 px-4 lg:px-80 text-white">
+            <div class="max-w-7xl mx-auto">
+                <a href="posts.html" class="inline-flex items-center text-sm font-semibold text-amber-100 hover:text-white transition mb-8">
+                    <i class="fas fa-arrow-left mr-2"></i> Kembali ke Berita
+                </a>
+                <p class="text-sm font-bold text-defaults-yellow tracking-wider uppercase mb-3">WAWASAN PENDIDIKAN</p>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Belajar Aktif Membantu Anak Memahami Dunia</h1>
+                <div class="flex flex-wrap items-center gap-4 mt-6 text-sm text-amber-100">
+                    <span class="inline-flex items-center gap-2"><i class="far fa-calendar-alt"></i>18 September 2026</span>
+                    <span class="inline-flex items-center gap-2"><i class="far fa-clock"></i>5 menit membaca</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 lg:py-16 px-4 lg:px-80 bg-gray-50">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <article class="lg:col-span-8">
+                    <div class="rounded-2xl overflow-hidden mb-8 shadow-sm border border-gray-100">
+                        <img src="images/students1.jpg" alt="Peserta didik mengikuti kegiatan belajar aktif" class="w-full max-h-[520px] object-cover">
+                    </div>
+                    <div class="text-gray-700 leading-relaxed space-y-5 text-sm md:text-base">
+                        <p class="text-lg text-gray-800"><strong class="text-defaults-navy">Belajar aktif</strong> memberi kesempatan kepada anak untuk terlibat langsung dalam proses memahami sesuatu. Anak tidak hanya mendengarkan, tetapi juga bertanya, mengamati, mencoba, berdiskusi, dan menyampaikan gagasannya.</p>
+                        <p class="text-justify">Pengalaman belajar yang dekat dengan kehidupan sehari-hari membantu peserta didik menghubungkan pengetahuan baru dengan hal-hal yang telah mereka kenal. Dari kegiatan sederhana, rasa ingin tahu dapat tumbuh menjadi kebiasaan untuk mencari tahu dan memahami lebih dalam.</p>
+                        <h2 class="text-2xl font-bold text-gray-900 pt-3">Ruang untuk bertanya dan mencoba</h2>
+                        <p class="text-justify">Setiap anak memiliki cara dan kecepatan belajar yang berbeda. Suasana yang mendukung membuat mereka lebih nyaman menyampaikan pertanyaan, mengemukakan pendapat, dan mencoba kembali ketika menghadapi kesulitan.</p>
+                        <p class="text-justify">Pendidik dapat menghadirkan kegiatan yang bervariasi, seperti membaca bersama, permainan edukatif, pengamatan lingkungan, karya kreatif, serta percakapan kelompok. Aktivitas tersebut membantu mengembangkan pengetahuan sekaligus kemampuan berkomunikasi dan bekerja sama.</p>
+                        <h2 class="text-2xl font-bold text-gray-900 pt-3">Kolaborasi mendukung tumbuh kembang</h2>
+                        <p class="text-justify">Proses belajar juga tumbuh melalui kerja sama antara peserta didik, pendidik, keluarga, dan lingkungan sekitar. Ketika anak mendapat dukungan yang konsisten, mereka dapat membangun rasa percaya diri, tanggung jawab, dan kemandirian.</p>
+                        <p class="text-justify">Pendidikan yang bermakna tidak hanya berfokus pada hasil, tetapi juga pada proses anak mengenali potensinya. Dengan lingkungan yang aman dan kesempatan untuk bereksplorasi, setiap tahap belajar menjadi bagian penting dari perjalanan tumbuh kembang.</p>
+                        <div class="bg-defaults-mist border border-amber-100 rounded-2xl p-6 mt-8">
+                            <p class="font-semibold text-defaults-navy">Yayasan Tunas Mandiri Bhakti Yudha mendukung pendidikan yang mendorong pengetahuan, karakter, kreativitas, dan kemandirian peserta didik.</p>
+                        </div>
+                    </div>
+                    <div class="mt-10 pt-6 border-t border-gray-200">
+                        <a href="posts.html" class="inline-flex items-center text-sm font-semibold text-defaults-blue hover:underline"><i class="fas fa-arrow-left mr-2"></i>Lihat berita lainnya</a>
+                    </div>
+                </article>
+
+                <aside class="lg:col-span-4">
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm lg:sticky lg:top-28">
+                        <h2 class="text-xs font-bold text-defaults-blue tracking-widest uppercase mb-6 pb-3 border-b border-gray-100">JELAJAHI YAYASAN</h2>
+                        <div class="space-y-5">
+                            <a href="about.html" class="flex gap-4 group items-center">
+                                <span class="w-12 h-12 rounded-xl bg-defaults-mist text-defaults-blue flex items-center justify-center flex-shrink-0"><i class="fas fa-building"></i></span>
+                                <span class="text-sm font-semibold text-gray-800 group-hover:text-defaults-blue transition">Profil Yayasan</span>
+                            </a>
+                            <a href="index.html#services" class="flex gap-4 group items-center">
+                                <span class="w-12 h-12 rounded-xl bg-defaults-mist text-defaults-blue flex items-center justify-center flex-shrink-0"><i class="fas fa-graduation-cap"></i></span>
+                                <span class="text-sm font-semibold text-gray-800 group-hover:text-defaults-blue transition">Unit Pendidikan</span>
+                            </a>
+                            <a href="facility.html" class="flex gap-4 group items-center">
+                                <span class="w-12 h-12 rounded-xl bg-defaults-mist text-defaults-blue flex items-center justify-center flex-shrink-0"><i class="fas fa-school"></i></span>
+                                <span class="text-sm font-semibold text-gray-800 group-hover:text-defaults-blue transition">Fasilitas Pendidikan</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="about-gradient-section py-16 lg:py-20 px-4 lg:px-80 text-white relative overflow-hidden">
+            <div class="relative z-10 flex flex-col lg:flex-row gap-8 items-center justify-between">
+                <div class="max-w-2xl">
+                    <p class="text-sm font-bold text-defaults-yellow tracking-wider uppercase mb-2">TUMBUH BERSAMA</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Pendidikan adalah upaya bersama</h2>
+                    <p class="text-amber-100 text-sm md:text-base leading-relaxed">Mari ciptakan pengalaman belajar yang bermakna dan mendukung masa depan setiap anak.</p>
+                </div>
+                <a href="contacts.html" class="shrink-0 bg-defaults-yellow text-defaults-navy font-semibold px-6 py-3 rounded-full hover:bg-amber-400 transition inline-flex items-center text-sm">Hubungi Yayasan <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-[#111111] text-gray-300 pt-16 pb-6 px-4 lg:px-80">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div>
+                <div class="flex items-center justify-center lg:justify-start space-x-3 mb-6">
+                    <img src="images/logo.png" alt="Logo Yayasan Tunas Mandiri Bhakti Yudha" class="h-12 w-12 rounded-xl">
+                    <div class="leading-tight"><p class="text-white font-bold text-sm">YAYASAN TUNAS MANDIRI</p><p class="text-xs text-gray-400 tracking-wider">BHAKTI YUDHA</p></div>
+                </div>
+                <p class="text-sm text-center lg:text-left">Berkomitmen mendukung pendidikan dan masa depan generasi.</p>
+            </div>
+            <div class="hidden lg:block">
+                <h2 class="text-white font-bold mb-6">Tautan Cepat</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">Profil Yayasan</a></li>
+                    <li><a href="structure.html" class="hover:text-white transition">Struktur Yayasan</a></li>
+                    <li><a href="facility.html" class="hover:text-white transition">Fasilitas</a></li>
+                    <li><a href="posts.html" class="hover:text-white transition">Berita & Kegiatan</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:block">
+                <h2 class="text-white font-bold mb-6">Unit Pendidikan</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html#services" class="hover:text-white transition">Kelompok Bermain</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Taman Kanak-kanak</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Sekolah Dasar</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Sekolah Menengah Pertama</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-white font-bold mb-6 text-center lg:text-left">Ikuti Kami</h2>
+                <div class="flex gap-3 justify-center lg:justify-start">
+                    <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full flex items-center justify-center bg-defaults-yellow text-defaults-navy hover:bg-amber-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full flex items-center justify-center bg-defaults-yellow text-defaults-navy hover:bg-amber-400 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full flex items-center justify-center bg-defaults-yellow text-defaults-navy hover:bg-amber-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full flex items-center justify-center bg-defaults-yellow text-defaults-navy hover:bg-amber-400 transition"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>Copyright 2026 - Yayasan Tunas Mandiri Bhakti Yudha</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition">FAQ</a>
+                <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
