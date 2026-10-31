@@ -1,7 +1,8 @@
 nav:has(.education-menu-trigger:hover) .mega-menu,
 nav:has(.education-menu-trigger:focus-within) .mega-menu,
 nav:has(.mega-menu:focus-within) .mega-menu,
-nav:has(.mega-menu:hover) .mega-menu { display: block; }
+nav:has(.mega-menu:hover) .mega-menu,
+.mega-menu.is-open { display: block; }
 
 #mobile-menu.is-open {
     transform: translateX(0);

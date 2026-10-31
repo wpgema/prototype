@@ -22,6 +22,19 @@ const mobileMenu = document.getElementById("mobile-menu");
 const menuBackdrop = document.getElementById("mobile-menu-backdrop");
 const menuIcon = document.getElementById("mobile-menu-icon");
 
+const educationMenuTrigger = document.querySelector(".education-menu-trigger");
+const educationMegaMenu = document.getElementById("education-mega-menu");
+const educationNav = educationMenuTrigger?.closest("nav");
+
+if (educationMenuTrigger && educationMegaMenu && educationNav) {
+    educationMenuTrigger.addEventListener("pointerenter", () => {
+        educationMegaMenu.classList.add("is-open");
+    });
+    educationNav.addEventListener("pointerleave", () => {
+        educationMegaMenu.classList.remove("is-open");
+    });
+}
+
 if (menuToggle && mobileMenu && menuBackdrop && menuIcon) {
     const setMenuOpen = (isOpen) => {
         menuToggle.setAttribute("aria-expanded", String(isOpen));
